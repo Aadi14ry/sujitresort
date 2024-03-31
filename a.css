@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white; /* Text color */
+  }
+  
+  .text-overlay h1,
+  .text-overlay p {
+    font-size: 24px; /* Adjust as needed */
+    margin: 0; /* Reset margins */
+  }
+  
