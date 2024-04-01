@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+  <div id="header">
+    <div class="navbar">
+      <div class="navbarLogo">
+        <img src="Screenshot_2024-03-30_142757-removebg-preview.png" style="width: 200px; margin-top: 5px;" alt="logo">
+      </div>
+
+      <div class="navbarLinks" style="color: black;">
+        <a href="../Pages/HomePage/home.html" class="navbarChild">Home</a>
+        <a href="" class="navbarChild">About Us</a>
+        <a href="" class="navbarChild">Services</a>
+        <a href="" class="navbarChild">Rooms</a>
+        <a href="" class="navbarChild">Contact Us</a>
+      </div>
+    </div>
+  </div>
+<div id="book">
+<form id="bookingForm" action="#" method="post">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="checkin_date">Check-in Date</label>
+    <input type="date" id="checkin_date" name="checkin_date" required>
+
+    <label for="checkout_date">Check-out Date</label>
+    <input type="date" id="checkout_date" name="checkout_date" required>
+
+    <input type="submit" value="Submit">
+</form>
+</div>
+
+<div id="footer">
+  <div class="container">
+      <div class="footer-info">
+          <h3>Contact Information</h3>
+          <ul>
+              <li><a href="info@resortsujit.com">info@resortsujit.com</a></li>
+              <li>+977 01-4537145</li>
+              <li>Address: Gyaneshwor, Kathmandu</li>
+          </ul>
+      </div>
+      <div class="footer-menu">
+          <h3>Menu</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Rooms</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <form action="#" method="post">
+              <label for="email">Enter your email:</label>
+              <input type="email" id="email" name="email" placeholder="Your email address" required>
+              <br>
+              <input type="submit" value="Subscribe">
+          </form>
+          <div class="social">
+              <div>
+                  <h3>Follow Us:</h3>
+                  <a href="https://www.facebook.com/" target="_blank">
+                      <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook logo">
+                  </a>
+                  
+                  <a href="https://www.youtube.com/" target="_blank">
+                      <img src="https://cdn-icons-png.flaticon.com/256/1384/1384060.png" alt="youtube logo">
+                  </a>
+              </a>
+              <a href="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" target="_blank">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="twitter logo">
+              </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright">
+      <p>© 2024 All Rights Reserved.</p>
+  </div>
+</div>
+
+
+<script>
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+        // Prevent form submission
+        event.preventDefault();
+        
+        // Validate the form fields
+        var fullname = document.getElementById("fullname").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var checkinDate = document.getElementById("checkin_date").value.trim();
+        var checkoutDate = document.getElementById("checkout_date").value.trim();
+        
+        // Check if any field is empty
+        if (fullname === "" || email === "" || checkinDate === "" || checkoutDate === "") {
+            alert("Please fill in all fields.");
+            return;
+        }
+        
+        // Check if the check-out date is after the check-in date
+        if (new Date(checkoutDate) <= new Date(checkinDate)) {
+            alert("Check-out date must be after check-in date.");
+            return;
+        }
+        
+        // If all validations pass, submit the form
+        this.submit();
+    });
+</script>
+
+</body>
+</html>
