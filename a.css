@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -12,7 +10,6 @@ body {
   justify-content: space-between;
 }
 
-/* Header Styles */
 #header {
   background-color: #f2f2f2;
   padding: 10px 0;
@@ -40,24 +37,23 @@ body {
   color: black;
 }
 
-/* Booking Form Styles */
 #book {
   text-align: center;
   height: 500px;
-  background-image: url('nature-blur-background-l2trci6fhs95x0by.jpg'); /* Replace 'your-background-image.jpg' with your image path */
+  background-image: url('nature-blur-background-l2trci6fhs95x0by.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50px; /* Added padding for better spacing */
+  padding: 50px; 
 }
 
 #bookingForm {
   width: 500px;
   margin: 0 auto;
-  margin-top: 50px; /* Adjusted top margin for better positioning */
-  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
-  padding: 20px; /* Added padding for better spacing */
-  border-radius: 10px; /* Rounded corners for the form */
+  margin-top: 50px; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px; 
+  border-radius: 10px; 
 }
 
 #bookingForm label {
@@ -87,7 +83,6 @@ body {
   background-color: #45a049;
 }
 
-/* Footer Styles */
 /*for footer */
 #footer {
   background-color: #000;

@@ -94,28 +94,24 @@
 
 <script>
     document.getElementById("bookingForm").addEventListener("submit", function(event) {
-        // Prevent form submission
+        
         event.preventDefault();
         
-        // Validate the form fields
         var fullname = document.getElementById("fullname").value.trim();
         var email = document.getElementById("email").value.trim();
         var checkinDate = document.getElementById("checkin_date").value.trim();
         var checkoutDate = document.getElementById("checkout_date").value.trim();
         
-        // Check if any field is empty
         if (fullname === "" || email === "" || checkinDate === "" || checkoutDate === "") {
             alert("Please fill in all fields.");
             return;
         }
         
-        // Check if the check-out date is after the check-in date
         if (new Date(checkoutDate) <= new Date(checkinDate)) {
             alert("Check-out date must be after check-in date.");
             return;
         }
         
-        // If all validations pass, submit the form
         this.submit();
     });
 </script>
