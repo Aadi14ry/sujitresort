@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header {
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarLogo img {
+  width: 200px;
+  margin-top: 5px;
+}
+
+.navbarLinks {
+  display: flex;
+}
+
+.navbarChild {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+#book {
+  text-align: center;
+  height: 500px;
+  background-image: url('nature-blur-background-l2trci6fhs95x0by.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px; 
+}
+
+#bookingForm {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 20px; 
+  border-radius: 10px; 
+}
+
+#bookingForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#bookingForm input[type="text"],
+#bookingForm input[type="email"],
+#bookingForm input[type="date"],
+#bookingForm input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#bookingForm input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+#bookingForm input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*for footer */
+#footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-info, .footer-menu, .footer-newsletter {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-info h3, .footer-menu h3, .footer-newsletter h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-info ul, .footer-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-info ul li, .footer-menu ul li {
+  margin-bottom: 10px;
+}
+
+.footer-info a, .footer-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-info a:hover, .footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-newsletter input[type="email"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-newsletter input[type="submit"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 16px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.footer-newsletter input[type="submit"]:hover {
+  background-color: redi;
+}
+
+.social {
+  height: 41%;
+  width: 500px;
+  display: flex;
+  justify-content: end;
+
+}
+.social h3{
+  display: flex;
+}
+
+.social div {
+  margin-right: 10px;
+}
+
+
+.social a {
+  text-decoration: none;
+}
+
+.social a img {
+  height: 30px;
+  width: 30px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
